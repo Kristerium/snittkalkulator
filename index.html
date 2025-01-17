@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karakterkalkulator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 font-sans leading-tight">
+  <div class="min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white shadow-lg w-full max-w-2xl rounded-lg">
+      <div class="p-6">
+      </div>
+      <div class="p-6 space-y-4">
+        <div id="entries"></div>
+        <button
+          class="w-full py-4 px-8 border-2 border-gray-200 text-gray-700 font-semibold rounded-md flex items-center justify-center space-x-2"
+          id="addSubject" style="margin-top: 40px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="16"></line>
+            <line x1="8" y1="12" x2="16" y2="12"></line>
+          </svg>
+          Legg til fag
+        </button>
+        <div class="mt-6 text-center bg-blue-50 p-4 rounded-lg">
+          <p class="text-lg font-semibold text-gray-700">Ditt karaktersnitt:</p>
+          <p class="text-4xl font-bold text-blue-600" id="averageDisplay">0.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
